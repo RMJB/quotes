@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="setMode('basic')">Basic</button>
+    <button mat-menu-item (click)="setMode('like-dislike')">Like/Dislike</button>
+    <button mat-menu-item (click)="setMode('mostliked')">Most Liked</button>
+    <button mat-menu-item (click)="setMode('trivia')">Trivia</button>
+  </mat-menu>
+
+  <span>Random Quote Generator</span>
+</mat-toolbar>
+
+<div class="app-container">
+  <div class="mode-content">
+    <app-quote *ngIf="currentMode === 'basic'"></app-quote>
+    <app-like-dislike *ngIf="currentMode === 'like-dislike'"></app-like-dislike>
+    <app-mostliked *ngIf="currentMode === 'mostliked'"></app-mostliked>
+    <app-trivia *ngIf="currentMode === 'trivia'"></app-trivia>
+  </div>
+</div>

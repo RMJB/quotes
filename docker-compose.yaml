@@ -1,0 +1,14 @@
+services:
+  quote-generator:
+    build:
+      context: ./quote-generator
+    ports:
+      - "4200:4200"
+
+  backend:
+    build:
+      context: ./quoteservice
+    ports:
+      - "8080:8080"
+    depends_on:
+      - quote-generator

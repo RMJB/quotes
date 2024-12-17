@@ -1,0 +1,26 @@
+.quote-card {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.quote-text {
+  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.quote-author {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.quote-actions button {
+  margin: 5px;
+}

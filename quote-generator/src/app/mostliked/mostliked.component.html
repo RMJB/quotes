@@ -1,0 +1,12 @@
+<div class="quote-card">
+<div class="most-liked-quotes" *ngIf="likedQuotes.length > 0">
+  <h3>Most Liked Quotes</h3>
+  <ul>
+    <li *ngFor="let likedQuote of likedQuotes">
+      <!--"{{ likedQuote.text }}" - {{ likedQuote.author }}-->
+      <p class="quote-text">"{{ likedQuote?.text }}"</p>
+      <p class="quote-author"><strong>- {{ likedQuote?.author }}</strong></p>
+    </li>
+  </ul>
+</div>
+</div>>

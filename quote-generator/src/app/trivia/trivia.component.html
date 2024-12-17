@@ -1,0 +1,20 @@
+<div class="quote-card">
+<p class="quote-text">"{{ quote?.text }}"</p>
+    <p>Who said this?</p>
+
+  <div class="quote-actions">
+    <div class="choices">
+      <button mat-raised-button *ngFor="let choice of choices" (click)="submitAnswer(choice)">
+        {{ choice }}
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="correctAnswer !== null">
+    <p *ngIf="correctAnswer" class="correct">Correct! 🎉</p>
+    <p *ngIf="!correctAnswer" class="incorrect">
+      Incorrect. The correct answer is <strong>{{ quote.author }}</strong>.
+    </p>
+    <button mat-raised-button color="accent" (click)="onNext()">Next Quote</button>
+  </div>
+</div>
