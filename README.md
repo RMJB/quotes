@@ -1,6 +1,12 @@
 Quotes App
 
 This project is a simple quote application with an Angular frontend and a Spring Boot backend.
+It has four modes a basic quote browser which serves a random quote each time
+A like/dislike mode where you can like quotes
+A most liked list of the top most liked quotes
+And lastly a trivia mode which lets you guess who said it.
+
+Installation
 Prerequisites
 
 Make sure you have the following installed on your machine:
