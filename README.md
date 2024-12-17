@@ -17,21 +17,21 @@ Running the Backend (Spring Boot)
 Navigate to the quoteservice directory.
 Run the following commands
 
-cd quoteservice
-mvn clean install
-java -jar target/quoteservice-0.0.1-SNAPSHOT.jar
+    cd quoteservice
+    mvn clean install
+    java -jar target/quoteservice-0.0.1-SNAPSHOT.jar
 
-    The backend will be accessible at http://localhost:8080.
+The backend will be accessible at http://localhost:8080.
 
 Running the Frontend (Angular)
-  Navigate to the quote-generator directory.
+Navigate to the quote-generator directory.
 Run the following commands
 
-cd quote-generator
-npm install
-ng serve
+    cd quote-generator
+    npm install
+    ng serve
 
-    The frontend will be accessible at http://localhost:4200.
+The frontend will be accessible at http://localhost:4200.
 
 Option 2
 Package JAR
@@ -51,6 +51,7 @@ Choose from different quote modes with the hamburger menu in the top
 
 Potential improvements
 
+    Add more documentation
     Implement frontend tests
     Implement more features
     Deploy in cloud
