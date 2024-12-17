@@ -44,10 +44,10 @@ Run with docker compose
 Using the provided docker-compose.yml
 Run the following command
 
-docker compose up -d
+    docker compose up -d
 
-    Go to http://localhost:4200
-    Choose from different quote modes with the hamburger menu in the top
+Go to http://localhost:4200
+Choose from different quote modes with the hamburger menu in the top
 
 Potential improvements
 
