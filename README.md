@@ -17,7 +17,7 @@ Running the Backend (Spring Boot)
 Navigate to the quoteservice directory.
 Run the following commands
 
-cd triviabackend
+cd quoteservice
 mvn clean install
 java -jar target/quoteservice-0.0.1-SNAPSHOT.jar
 
@@ -37,8 +37,8 @@ Option 2
 Package JAR
 Run the following commands
 
-cd quoteservice
-mvn clean install
+    cd quoteservice
+    mvn clean install
 
 Run with docker compose
 Using the provided docker-compose.yml
